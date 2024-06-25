@@ -1,0 +1,42 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+    <servlet>
+        <servlet-name>SaveInvoiceServlet</servlet-name>
+        <servlet-class>Invoice.SaveInvoiceServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveInvoiceServlet</servlet-name>
+        <url-pattern>/saveInvoice</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>DisplayInvoiceServlet</servlet-name>
+    <servlet-class>Invoice.DisplayInvoiceServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DisplayInvoiceServlet</servlet-name>
+    <url-pattern>/displayInvoice</url-pattern>
+</servlet-mapping>
+ 
+<servlet>
+    <servlet-name>SaveEditedInvoiceServlet</servlet-name>
+    <servlet-class>Invoice.SaveEditedInvoiceServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SaveEditedInvoiceServlet</servlet-name>
+    <url-pattern>/saveEditedInvoice</url-pattern>
+</servlet-mapping>
+<servlet>
+    <servlet-name>Display</servlet-name>
+    <servlet-class>Invoice.Display</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Display</servlet-name>
+    <url-pattern>/Display</url-pattern>
+</servlet-mapping>
+
+    
+    <welcome-file-list>
+    
+        <welcome-file>Index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
